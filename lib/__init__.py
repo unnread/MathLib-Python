@@ -1,4 +1,4 @@
-# __init__.py
+# MathLib/__init__.py
 
 from .calcul import (
     additionner,
