@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MathLib - Documentation</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #111827;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: #2563eb;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+nav {
+    background: #1f2937;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    margin-top: 40px;
+}
+
+
+h2 {
+    color: #60a5fa;
+}
+
+
+.card {
+
+    background: #1f2937;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+
+}
+
+
+pre {
+
+    background: black;
+    color: #22c55e;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+
+}
+
+
+footer {
+
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    background: #1f2937;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>MathLib 🧮</h1>
+
+<p>Documentation du module Python calcul.py</p>
+
+</header>
+
+
+
+<nav>
+
+<a href="#installation">Installation</a>
+<a href="#utilisation">Utilisation</a>
+<a href="#fonctions">Fonctions</a>
+<a href="#license">Licence</a>
+
+</nav>
+
+
+
+<main>
+
+
+
+<section>
+
+<h2>📌 Description</h2>
+
+<p>
+MathLib est une bibliothèque Python contenant des fonctions
+mathématiques simples.
+</p>
+
+<p>
+Le module principal est <b>calcul.py</b>.
+</p>
+
+</section>
+
+
+
+
+<section id="installation">
+
+<h2>⚙️ Installation</h2>
+
+
+<p>
+Ajoutez le fichier <b>calcul.py</b> dans votre projet.
+</p>
+
+
+<pre>
+Projet/
+│
+├── calcul.py
+└── main.py
+</pre>
+
+
+</section>
+
+
+
+
+<section id="utilisation">
+
+
+<h2>🚀 Utilisation</h2>
+
+
+<p>Importer le module :</p>
+
+
+<pre>
+import calcul
+</pre>
+
+
+<p>Exemple :</p>
+
+
+<pre>
+import calcul
+
+resultat = calcul.additionner(10,20,30)
+
+print(resultat)
+</pre>
+
+
+</section>
+
+
+
+
+<section id="fonctions">
+
+
+<h2>📚 Fonctions disponibles</h2>
+
+
+
+<div class="card">
+
+<h3>➕ Addition</h3>
+
+<pre>
+calcul.additionner(10,20,30)
+</pre>
+
+<p>Additionne plusieurs nombres.</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>➖ Soustraction</h3>
+
+<pre>
+calcul.soustraire(100,20,10)
+</pre>
+
+<p>Soustrait plusieurs nombres.</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>✖ Multiplication</h3>
+
+<pre>
+calcul.multiplier(2,3,4)
+</pre>
+
+<p>Multiplie plusieurs nombres.</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>➗ Division</h3>
+
+<pre>
+calcul.diviser(100,2,5)
+</pre>
+
+<p>Divise plusieurs nombres.</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>⬛ Carré</h3>
+
+<pre>
+calcul.carre(5)
+</pre>
+
+<p>Retourne le carré d'un nombre.</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>🔥 Puissance</h3>
+
+<pre>
+calcul.puissance(2,4)
+</pre>
+
+<p>
+Résultat : 16
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>√ Racine carrée</h3>
+
+<pre>
+calcul.racine(25)
+</pre>
+
+<p>
+Résultat : 5
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>📐 Distance entre deux points</h3>
+
+<pre>
+calcul.pythagoreD(0,0,3,4)
+</pre>
+
+<p>
+Calcule la distance entre deux points.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>📏 Hypoténuse</h3>
+
+<pre>
+calcul.pythagoreH(3,4)
+</pre>
+
+<p>
+Calcule l'hypoténuse d'un triangle rectangle.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>📈 Trigonométrie</h3>
+
+<pre>
+calcul.sin(angle)
+
+calcul.cos(angle)
+
+calcul.tan(angle)
+</pre>
+
+<p>
+Les angles sont en radians.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>🔄 Conversion d'angles</h3>
+
+<pre>
+calcul.degresVersRadians(90)
+
+calcul.radiansVersDegres(3.14159)
+</pre>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<section id="test">
+
+
+<h2>🧪 Test</h2>
+
+
+<p>
+Le module contient un programme de test intégré :
+</p>
+
+
+<pre>
+python calcul.py
+</pre>
+
+
+<p>
+Il vérifie toutes les fonctions :
+addition, multiplication, Pythagore,
+trigonométrie et conversions.
+</p>
+
+
+</section>
+
+
+
+
+
+<section id="license">
+
+
+<h2>📜 Licence</h2>
+
+
+<p>
+MathLib est distribué sous licence MIT.
+</p>
+
+
+<pre>
+MIT License
+
+Permission is hereby granted,
+free of charge, to any person obtaining
+a copy of this software.
+</pre>
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+<footer>
+
+<p>
+MathLib - Python Mathematical Library
+</p>
+
+<p>
+Licence MIT
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
