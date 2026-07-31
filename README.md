@@ -17,7 +17,7 @@ MathLib contient :
 - ⬛ Carré d'un nombre
 - 🔥 Puissance
 - √ Racine carrée
-- 📐 Calcul d'hypoténuse avec Pythagore
+- 📐 Hypoténuse avec Pythagore
 - 📍 Distance entre deux points
 - 📈 Sinus, cosinus, tangente
 - 🔄 Conversion degrés ↔ radians
@@ -29,8 +29,13 @@ MathLib contient :
 ```
 MathLib/
 │
-├── calcul.py
-├── test.py
+├── MathLib/
+│   ├── __init__.py
+│   └── calcul.py
+│
+├── exemple/
+│   └── test.py
+│
 ├── README.md
 └── LICENSE
 ```
@@ -39,33 +44,24 @@ MathLib/
 
 # ⚙️ Installation
 
-Aucune installation supplémentaire n'est nécessaire.
+Téléchargez le projet puis placez-le dans votre environnement Python.
 
-Il suffit de placer le fichier `calcul.py` dans votre projet Python.
-
-Exemple :
-
-```
-MonProjet/
-│
-├── main.py
-└── calcul.py
-```
+Aucune dépendance externe n'est nécessaire.
 
 ---
 
 # 🚀 Utilisation
 
-Importez le module :
+Importer le module :
 
 ```python
-import calcul
+import MathLib.calcul as calcul
 ```
 
 Exemple :
 
 ```python
-import calcul
+import MathLib.calcul as calcul
 
 resultat = calcul.additionner(10, 20, 30)
 
@@ -82,12 +78,10 @@ Résultat :
 
 # 📚 Fonctions disponibles
 
-## ➕ additionner()
-
-Additionne plusieurs nombres.
+## ➕ Addition
 
 ```python
-calcul.additionner(10, 20, 30)
+calcul.additionner(10,20,30)
 ```
 
 Résultat :
@@ -98,12 +92,10 @@ Résultat :
 
 ---
 
-## ➖ soustraire()
-
-Soustrait plusieurs nombres.
+## ➖ Soustraction
 
 ```python
-calcul.soustraire(100, 20, 10)
+calcul.soustraire(100,20,10)
 ```
 
 Résultat :
@@ -114,12 +106,10 @@ Résultat :
 
 ---
 
-## ✖ multiplier()
-
-Multiplie plusieurs nombres.
+## ✖ Multiplication
 
 ```python
-calcul.multiplier(2, 3, 4)
+calcul.multiplier(2,3,4)
 ```
 
 Résultat :
@@ -130,12 +120,10 @@ Résultat :
 
 ---
 
-## ➗ diviser()
-
-Divise plusieurs nombres.
+## ➗ Division
 
 ```python
-calcul.diviser(100, 2, 5)
+calcul.diviser(100,2,5)
 ```
 
 Résultat :
@@ -146,9 +134,7 @@ Résultat :
 
 ---
 
-## ⬛ carre()
-
-Calcule le carré d'un nombre.
+## ⬛ Carré
 
 ```python
 calcul.carre(5)
@@ -162,12 +148,10 @@ Résultat :
 
 ---
 
-## 🔥 puissance()
-
-Calcule une puissance.
+## 🔥 Puissance
 
 ```python
-calcul.puissance(2, 4)
+calcul.puissance(2,4)
 ```
 
 Résultat :
@@ -178,9 +162,7 @@ Résultat :
 
 ---
 
-## √ racine()
-
-Calcule une racine carrée.
+## √ Racine carrée
 
 ```python
 calcul.racine(25)
@@ -196,12 +178,10 @@ Résultat :
 
 # 📐 Géométrie
 
-## pythagoreH()
-
-Calcule l'hypoténuse d'un triangle rectangle.
+## Hypoténuse
 
 ```python
-calcul.pythagoreH(3, 4)
+calcul.pythagoreH(3,4)
 ```
 
 Résultat :
@@ -212,12 +192,10 @@ Résultat :
 
 ---
 
-## pythagoreD()
-
-Calcule la distance entre deux points.
+## Distance entre deux points
 
 ```python
-calcul.pythagoreD(0, 0, 3, 4)
+calcul.pythagoreD(0,0,3,4)
 ```
 
 Résultat :
@@ -230,37 +208,25 @@ Résultat :
 
 # 📈 Trigonométrie
 
-Les angles doivent être en radians.
+Les angles utilisent les radians.
 
-## sin()
-
-Calcule le sinus.
+## Sinus
 
 ```python
 calcul.sin(angle)
 ```
 
----
-
-## cos()
-
-Calcule le cosinus.
+## Cosinus
 
 ```python
 calcul.cos(angle)
 ```
 
----
-
-## tan()
-
-Calcule la tangente.
+## Tangente
 
 ```python
 calcul.tan(angle)
 ```
-
----
 
 Exemple :
 
@@ -280,60 +246,28 @@ Résultat :
 
 # 🔄 Conversion d'angles
 
-## degresVersRadians()
-
-Convertit des degrés en radians.
+## Degrés vers radians
 
 ```python
 calcul.degresVersRadians(180)
 ```
 
-Résultat :
-
-```
-3.14159...
-```
-
 ---
 
-## radiansVersDegres()
-
-Convertit des radians en degrés.
+## Radians vers degrés
 
 ```python
 calcul.radiansVersDegres(3.14159)
-```
-
-Résultat :
-
-```
-180
 ```
 
 ---
 
 # 🧪 Tests
 
-Le fichier `test.py` permet de vérifier le fonctionnement de la bibliothèque.
-
-Lancer les tests :
+Pour tester la bibliothèque :
 
 ```bash
-python test.py
-```
-
-Exemple de résultat :
-
-```
-Addition : 50
-Soustraction : 70
-Multiplication : 24
-Division : 10
-Carré : 25
-Puissance : 16
-Racine : 5
-Hypoténuse : 5
-Sin 90° : 1
+python exemple/test.py
 ```
 
 ---
@@ -342,13 +276,7 @@ Sin 90° : 1
 
 MathLib est distribué sous licence MIT.
 
-Vous pouvez :
-
-- Utiliser le projet
-- Modifier le code
-- Distribuer le projet
-
-Selon les conditions de la licence MIT.
+Vous êtes libre d'utiliser, modifier et distribuer ce projet selon les conditions de la licence MIT.
 
 ---
 
@@ -356,10 +284,4 @@ Selon les conditions de la licence MIT.
 
 Créé par **Youness (unnread)**
 
-Projet Python réalisé pour apprendre la création d'une bibliothèque mathématique.
-
----
-
-# 🐍 Langage utilisé
-
-Python 3
+Projet réalisé en Python pour apprendre la création d'une bibliothèque.
