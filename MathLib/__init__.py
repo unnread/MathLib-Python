@@ -14,5 +14,6 @@ from .calcul import (
     cos,
     tan,
     degresVersRadians,
-    radiansVersDegres
+    radiansVersDegres,
+    factoriel
 )
