@@ -21,25 +21,8 @@ MathLib contient :
 - 📍 Distance entre deux points
 - 📈 Sinus, cosinus, tangente
 - 🔄 Conversion degrés ↔ radians
-
----
-
-# 📁 Structure du projet
-
-```
-MathLib/
-│
-├── MathLib/
-│   ├── __init__.py
-│   └── calcul.py
-│
-├── exemple/
-│   └── test.py
-│
-├── README.md
-└── LICENSE
-```
-
+- ! Factoriel d'un nombre
+- 
 ---
 
 # ⚙️ Installation
