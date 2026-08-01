@@ -51,5 +51,8 @@ print("\n=== TEST CONVERSION ANGLE ===")
 print("90 degrés en radians :", calcul.degresVersRadians(90))
 print("Pi radians en degrés :", calcul.radiansVersDegres(3.141592653589793))
 
+print("\n==== TEST FACTORIEL ===")
+
+print("Factoriel de 5 : ", calcul.factoriel(5))
 
 print("\n=== FIN DES TESTS ===")
