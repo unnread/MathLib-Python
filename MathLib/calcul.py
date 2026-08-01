@@ -95,7 +95,18 @@ def degresVersRadians(degres):
 def radiansVersDegres(radians):
     return radians * 180 / math.pi
 
+# Factorielle
+def factoriel(nombre):
+    if nombre < 0:
+        raise ValueError("La factorielle n'est définie que pour les entiers positifs.")
+    if not isinstance(nombre, int):
+        raise TypeError("Le nombre doit être un entier.")
 
+    resultat = 1
+    for i in range(2, nombre + 1):
+        resultat *= i
+
+    return resultat
 
 # Test
 if __name__ == "__main__":
@@ -119,3 +130,4 @@ if __name__ == "__main__":
 
     print("90 degrés en radians :", degresVersRadians(90))
     print("π radians en degrés :", radiansVersDegres(math.pi))
+    print("Factoriel de 5 :", factoriel(5))
